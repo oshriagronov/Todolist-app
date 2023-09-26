@@ -1,0 +1,70 @@
+<%- include("partials/header.ejs") %>
+    <nav>
+        <a id="today" href="/">Today</a>
+        <a id="work" href="/work">Work</a>
+    </nav>
+    <main>
+        <div class="box" id="heading">
+            <h1>Work</h1>
+        </div>
+        <div class="box">
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()">
+                <p>test</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
+                <p>test 2</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()">
+                <p>test</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
+                <p>test 2</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()">
+                <p>test</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
+                <p>test 2</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()">
+                <p>test</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
+                <p>test 2</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()">
+                <p>test</p>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
+                <p>test 2</p>
+            </div>
+            <% for(var i = 0; i < length; i++){ %>
+                <div class="item">
+                    <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
+                    <p><%= userInput[i] %></p>
+                </div>
+            <% } %>
+            <div class="item">
+                <form action="/work" method="POST">
+                    <input type="text" class="input-text" name="new-item" placeholder="New Item">
+                    <input type="submit" value="+">
+                </form>
+            </div>
+        </div>
+        <%- include("partials/footer.ejs") %>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/checkbox.js"></script>
+</body>
+
+</html>
