@@ -27,22 +27,14 @@ app.get("/work", (req,res) =>{
   });
 });
 
-app.post("/", (req, res) =>{
+app.post("/submit", (req, res) =>{
   todayTaskBank.push(req.body["new-item"]);
-  res.render("index.ejs", {
-    length: todayTaskBank.length,
-    userInput: todayTaskBank
-  });
-
+  res.redirect("/");
 });
 
-app.post("/work", (req, res) =>{
+app.post("/workSubmit", (req, res) =>{
   workTaskBank.push(req.body["new-item"]);
-  res.render("work.ejs", {
-    length: workTaskBank.length,
-    userInput: workTaskBank
-  });
-
+  res.redirect("/work");
 });
 
 app.listen(port, () => {
