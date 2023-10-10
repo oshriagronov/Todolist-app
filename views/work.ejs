@@ -11,7 +11,7 @@
             <% for(var i = 0; i < length; i++){ %>
                 <div class="item">
                     <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
-                    <p><%= tasksDataBase[i] %></p>
+                    <p><%= tasksDataBase[i].text %></p>
                 </div>
             <% } %>
             <div class="item">
