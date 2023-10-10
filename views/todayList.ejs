@@ -5,7 +5,7 @@
     </nav>
     <main>
         <div class="box" id="heading">
-            <h1>Work</h1>
+            <h1><script>document.write(new Date().toDateString())</script></h1> <!-- Script to write the current date with H1 -->
         </div>
         <div class="box">
             <% for(var i = 0; i < length; i++){ %>
@@ -15,7 +15,7 @@
                 </div>
             <% } %>
             <div class="item">
-                <form action="/workSubmit" method="POST">
+                <form action="/todaySubmit" method="POST">
                     <input type="text" class="input-text" name="new-item" placeholder="New Item">
                     <input type="submit" value="+">
                 </form>

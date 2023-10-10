@@ -7,7 +7,7 @@ body{
 
 .item p{
   color: black;
-  padding: 0px 5px;
+  padding: 0px 15px;
   margin-bottom: 0px;
   font-size: large;
 
@@ -29,8 +29,9 @@ body{
 .item{
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 15px;
   min-height: 60px;
+  border-bottom: solid 1px #222;
   }
 
 .completed{
@@ -65,7 +66,7 @@ input[type="submit"] {
   font-weight: bold;
   text-align: center;
   background-color: #704F4F;
-  border: #000 solid 1px;
+  border: #222 solid 1px;
 }
 
 footer{
@@ -75,7 +76,7 @@ footer{
 a{
   margin-right: 5px;
   color: #C4C4C4;
-  text-decoration: none;
+  text-decoration: none; /* hide the blue highlight on url embedded in text <a> tag */
 }
 
 
