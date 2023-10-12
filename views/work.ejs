@@ -8,12 +8,13 @@
             <h1>Work</h1>
         </div>
         <div class="box">
-            <% for(var i = 0; i < length; i++){ %>
+            <!-- With the for each loop we going through the array and print the text of the tasks -->
+            <% tasksDataBase.forEach(element => { %>
                 <div class="item">
                     <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
-                    <p><%= tasksDataBase[i].text %></p>
+                    <p><%= element.text %></p>
                 </div>
-            <% } %>
+            <% }); %>
             <div class="item">
                 <form action="/workSubmit" method="POST">
                     <input type="text" class="input-text" name="new-item" placeholder="New Item">
