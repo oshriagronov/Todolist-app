@@ -10,9 +10,11 @@
         <div class="box">
             <!-- With the for each loop we going through the array and print the text of the tasks -->
             <% tasksDataBase.forEach(element => { %>
-                <div class="item">
-                    <input type="checkbox" name="checkbox" value="true" onChange="checkboxChanged()"> 
-                    <p><%= element.text %></p>
+                <div>
+                    <form class="item" action="/checkedWorkList" method="POST">
+                        <input type="checkbox" name="checkbox" value=<%= element._id %> onChange="checkboxChanged(); this.form.submit()"> 
+                        <p><%= element.text %></p>
+                    </form>
                 </div>
             <% }); %>
             <div class="item">

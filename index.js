@@ -57,9 +57,11 @@ app.get("/work", (req,res) =>{
 });
 
 // POST function for adding new task for the today list
-app.post("/todaySubmit", (req, res) =>{
+app.post("/todaySubmit", async(req, res) =>{
+  const idArray =  todayTasksArray.map(({ _id }) => _id);
+  const lastId = idArray.sort((a,b) => b-a)[0];
   const  newTodayTask = new todayTasks({
-    _id: todayTasksArray.length + 1,
+    _id: lastId + 1,
     text: req.body["new-item"]
   });
   newTodayTask.save();
@@ -67,13 +69,26 @@ app.post("/todaySubmit", (req, res) =>{
 });
 
 // POST function for adding new task for the work list
-app.post("/workSubmit", (req, res) =>{
+app.post("/workSubmit", async(req, res) =>{
+  const idArray =  workTasksArray.map(({ _id }) => _id);
+  const lastId = idArray.sort((a,b) => b-a)[0];
   const  newWorkTask = new workTasks({
-    _id: workTasksArray.length + 1,
+    _id: lastId + 1,
     text: req.body["new-item"]
   });
   newWorkTask.save();
   res.redirect("/work");
+});
+
+// DELETE method to delete checked tasks today list
+app.post("/checkedTodayList", async(req, res) =>{
+  await todayTasks.deleteOne({_id: req.body.checkbox}); // req.body.checkbox gives the id number
+  res.redirect("/")
+});
+// DELETE method to delete checked tasks from work list
+app.post("/checkedWorkList", async(req, res) =>{
+  await workTasks.deleteOne({_id: req.body.checkbox}); // req.body.checkbox gives the id number
+  res.redirect("/work")
 });
 
 // listening function port 3000(port)
