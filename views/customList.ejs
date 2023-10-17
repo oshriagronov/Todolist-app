@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+    <nav>
+        <a id="today" href="/">Today</a>
+        <a id="work" href="/work">Work</a>
+    </nav>
+    <main>
+        <div class="box" id="heading">
+            <h1><%= customListName %></h1> <!-- this variable get the name of the custom list -->
+        </div>
+        <div class="box">
+            <!-- With the for each loop we going through the array and print the text of the tasks -->
+            <% tasksDataBase.forEach(element => { %>
+                <div>
+                    <form class="item" action=<%= "/checkCustomList" %> method="post">
+                        <input type="checkbox" name="checkbox" value=<%= element._id %> onChange="checkboxChanged(); this.form.submit()"> 
+                        <p><%= element.text %></p>
+                    </form>
+                </div>
+            <% }); %>
+            <div class="item">
+                <form action="/submitCustomList" method="POST">
+                    <input type="text" class="input-text" name="new-item" placeholder="New Item">
+                    <input type="submit" value="+">
+                </form>
+            </div>
+        </div>
+        <%- include("partials/footer.ejs") %>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/checkbox.js"></script>
+</body>
+
+</html>
