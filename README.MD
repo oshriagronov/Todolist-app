@@ -31,7 +31,7 @@ both of the lists have a buttons on the top left side of the side for quick acce
 - All lists data saved locally using MongoDB as database, so refresh the page won't lose the data.
 
 ## Screenshots
-![Today-list-image](./public/assets/Today-list-image.jpg.png)
+![Today-list-image](./public/assets/Today-list-image.jpg)
 
 ![Work-list-image](./public/assets/Work-list-image.jpg)
 
