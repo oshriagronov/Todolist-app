@@ -1,13 +1,10 @@
 // Import essential modules and setting them up
 import express from "express";
 import mongoose from "mongoose";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
 import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Connecting to the Database for reading data
 mongoose.connect("mongodb://127.0.0.1:27017/todolistData", {useNewUrlParser : true});

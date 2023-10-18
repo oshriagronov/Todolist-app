@@ -10,7 +10,6 @@ You have two built-in lists(Today list, Work list), but you can add a custom lis
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Project Status](#project-status)
 * [Acknowledgements](#acknowledgements)
 
 ## General info
@@ -22,7 +21,7 @@ I hope you will enjoy it too and i will be glad to get tips :)
 ## Technologies
 - Software language: JS, HTML, CSS
 - Frameworks: Node.js
-- NPM modules dependencies: Express, Mongoose
+- NPM modules dependencies: express, mongoose, bodyParser
 - Database: MongoDB (NoSQL)
 
 ## Features
@@ -32,16 +31,21 @@ both of the lists have a buttons on the top left side of the side for quick acce
 - All lists data saved locally using MongoDB as database, so refresh the page won't lose the data.
 
 ## Screenshots
+Today list
 ![Today-list-image](./public/assets/Today-list-image.jpg)
 
+Work list
 ![Work-list-image](./public/assets/Work-list-image.jpg)
 
+Custom list(in that case the list called "home")
 ![Custom-list-image](./public/assets/Custom-list-image.jpg)
 
 ## Setup
 To run the todo-list website you need couple of softwares:
 - node.js
 - npm modules i included(easy to install)
+- MongoDB
+> All those tools you can install pretty easily with a quick search on youtube for a guide
 
 ### How to start?
 1. First download all project files
@@ -51,15 +55,22 @@ To run the todo-list website you need couple of softwares:
 npm i
 ```
 
-3. run the project with node(or nodemon)
+3. Run the project with node(or nodemon)
 
 ```bash
 node index.js
 ```
-4. open the browser and enter in the url bar:
-```text
+4. Open the browser and enter in the url bar:
+```
 localhost:3000
 ```
+
+### How to access custom list?
+The url structure go like this:
+```
+localhost:3000/List/<name of the custom list>
+```
+- With this structure you access you custom list and if this list doesn't exist it will create one automatically.
 
 ## Acknowledgements
 I would want to thank to Dr. Angela Yu for creating the great course "The Complete 2023 Web Development Bootcamp"
