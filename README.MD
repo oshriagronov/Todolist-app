@@ -1,4 +1,5 @@
 # Todo-list Website
+https://img.shields.io/badge/logo-javascript-blue?logo=javascript https://img.shields.io/badge/logo-html-blue?logo=html https://img.shields.io/badge/logo-css-blue?logo=css
 The project is a basically a todo-list on the web where you can add tasks and clear tasks you finished!
 You have two built-in lists(Today list, Work list), but you can add a custom list and access them through url structure i will show here
 
@@ -10,7 +11,6 @@ You have two built-in lists(Today list, Work list), but you can add a custom lis
 * [Setup](#setup)
 * [Project Status](#project-status)
 * [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
 
 ## General info
 The project is as the name suggest, it's a simple todo-list website with couple of features.
