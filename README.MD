@@ -1,7 +1,5 @@
 # Todo-list Website
-<image src="https://img.shields.io/badge/logo-javascript-blue?logo=javascript"/>
-<image src="https://img.shields.io/badge/logo-html-blue?logo=html"/>
-<image src="https://img.shields.io/badge/logo-css-blue?logo=css" />
+<image src="https://img.shields.io/badge/logo-javascript-blue?logo=javascript"/><image src="https://img.shields.io/badge/logo-html-blue?logo=html"/><image src="https://img.shields.io/badge/logo-css-blue?logo=css" />
 The project is a basically a todo-list on the web where you can add tasks and clear tasks you finished!
 You have two built-in lists(Today list, Work list), but you can add a custom list and access them through url structure i will show here
 
