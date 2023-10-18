@@ -1,5 +1,6 @@
 # Todo-list Website
-<image src="https://img.shields.io/badge/logo-javascript-blue?logo=javascript"/> <image src="https://img.shields.io/badge/logo-html-blue?logo=html"/> <image src="https://img.shields.io/badge/logo-css-blue?logo=css" /> <br>
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+<br>
 The project is a basically a todo-list on the web where you can add tasks and clear tasks you finished!
 You have two built-in lists(Today list, Work list), but you can add a custom list and access them through url structure i will show here
 
@@ -19,7 +20,7 @@ I hope you will enjoy it too and i will be glad to get tips :)
 
 
 ## Technologies
-- Software langue: JS, HTML, CSS
+- Software language: JS, HTML, CSS
 - Frameworks: Node.js
 - NPM modules dependencies: Express, Mongoose
 - Database: MongoDB (NoSQL)
