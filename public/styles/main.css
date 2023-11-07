@@ -74,10 +74,12 @@ footer{
   text-align: center;
 }
 
+/* 
+
 a{
   margin-right: 5px;
   color: #C4C4C4;
-  text-decoration: none; /* hide the blue highlight on url embedded in text <a> tag */
+  text-decoration: none; hide the blue highlight on url embedded in text <a> tag
 }
 
 
@@ -102,3 +104,4 @@ a{
   background-repeat: no-repeat;
   margin: 15px 10px 0px 20px;
 }
+*/

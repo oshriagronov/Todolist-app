@@ -1,25 +1,29 @@
 <%- include("partials/header.ejs") %>
+    <!--
+        departed
     <nav>
         <a id="today" href="/">Today</a>
         <a id="work" href="/work">Work</a>
     </nav>
+    -->
+
     <main>
         <div class="box" id="heading">
-            <h1>Work</h1>
+            <h1><%= listName %></h1> <!-- this variable get the name of the list -->
         </div>
         <div class="box">
             <!-- With the for each loop we going through the array and print the text of the tasks -->
-            <% tasksDataBase.forEach(element => { %>
+            <% tasksArray.forEach(task => { %>
                 <div>
-                    <form class="item" action="/checkedWorkList" method="POST">
-                        <input type="checkbox" name="checkbox" value=<%= element._id %> onChange="checkboxChanged(); this.form.submit()"> 
-                        <p><%= element.text %></p>
+                    <form class="item" action=<%= "/checkedTask" %> method="post">
+                        <input type="checkbox" name="checkbox" value=<%= task._id %> onChange="checkboxChanged(); this.form.submit()"> 
+                        <p><%= task.text %></p>
                     </form>
                 </div>
             <% }); %>
             <div class="item">
-                <form action="/workSubmit" method="POST">
-                    <input type="text" class="input-text" name="new-item" placeholder="New Item">
+                <form action="/submitNewTask" method="POST">
+                    <input type="text" class="input-text" name="new-task" placeholder="New task">
                     <input type="submit" value="+">
                 </form>
             </div>

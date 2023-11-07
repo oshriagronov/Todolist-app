@@ -2,7 +2,6 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 <br>
 The project is a basically a todo-list on the web where you can add tasks and clear tasks you finished!
-You have two built-in lists(Today list, Work list), but you can add a custom list and access them through url structure i will show here
 
 ## Table of contents
 * [General info](#general-info)
@@ -25,20 +24,13 @@ I hope you will enjoy it too and i will be glad to get tips :)
 - Database: MongoDB (NoSQL)
 
 ## Features
-- The user have to built-in lists from the start(Today, Work)
-both of the lists have a buttons on the top left side of the side for quick access.
-- The user can create custom lists and access them through url specific structure.
-- All lists data saved locally using MongoDB as database, so refresh the page won't lose the data.
+- User can create lists of their own with just typing the name in the url bar
+- All the data of thee lists are saved locally using MongoDB as database, so refresh the page won't erase changes.
 
 ## Screenshots
-Today list
 ![Today-list-image](./public/assets/Today-list-image.jpg)
 
-Work list
 ![Work-list-image](./public/assets/Work-list-image.jpg)
-
-Custom list(in that case the list called "home")
-![Custom-list-image](./public/assets/Custom-list-image.jpg)
 
 ## Setup
 To run the todo-list website you need couple of softwares:
@@ -58,19 +50,15 @@ npm i
 3. Run the project with node(or nodemon)
 
 ```bash
-node index.js
+node app.js
 ```
 4. Open the browser and enter in the url bar:
 ```
-localhost:3000
+localhost:3000/<name of the list>
 ```
 
-### How to access custom list?
-The url structure go like this:
-```
-localhost:3000/List/<name of the custom list>
-```
-- With this structure you access you custom list and if this list doesn't exist it will create one automatically.
+- With this structure you access you lists that already exist and if the list doesn't exist it will create one automatically.
+- If you don't enter a name it will use the default list called "Home"
 
 ## Acknowledgements
 I would want to thank to Dr. Angela Yu for creating the great course "The Complete 2023 Web Development Bootcamp"
