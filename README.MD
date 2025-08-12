@@ -63,7 +63,7 @@ To get a local copy up and running follow these simple steps.
 3. **Run the project with node:**  
    ```bash
   node app.js
-    ```
+  ```
 
 4. Open the browser and enter in the url bar:
 ```
