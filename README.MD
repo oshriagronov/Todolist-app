@@ -28,7 +28,7 @@ This project is a simple, minimalistic to-do list application that allows users 
 
 
 ## Media
-<img src="./public/assets/Today-list-image.jpg" alt="Today-list-image" width="200" height="200">
+<img src="./public/assets/Today-list-image.jpg" alt="Today-list-image" width="600" height="600">
 <img src="./public/assets/Work-list-image.jpg" alt="Work-list-image" width="600" height="600">
 
 ## Getting Started
@@ -53,7 +53,6 @@ To get a local copy up and running follow these simple steps.
    ```
 
 2. **Install npm modules:**
-
    ```bash
    sudo npm i
    ```
