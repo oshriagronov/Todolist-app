@@ -1,62 +1,70 @@
-# Todo-list Website
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-<br>
-The project is basically a todo-list on the web where you can add tasks and clear tasks you finished!
+<br />
+<div align="center">
+  <a href="https://github.com/oshriagronov/todolist-app">
+    <img src="public/assets/logo.png" alt="Logo" width="200" height="200">
+  </a>
 
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Acknowledgements](#acknowledgements)
+<h3 align="center">Todo list</h3>
+  <p align="center">
+    Simple todo-list website.
+  </p>
+</div>
 
-## General info
-The project is as the name suggests, it's a simple todo-list website with a couple of features.
-I created this project as part of my course in Udemy and it was a good learning experience and fun!
-I hope you will enjoy it too and I will be glad to get tips :)
+## About
+This project is a simple, minimalistic to-do list application that allows users to create personalized lists easily. 
+<br/>Built with Node.js, Express, MongoDB, JavaScript, HTML, and CSS, it saves data locally using a MongoDB database, ensuring that changes are not lost upon refreshing the page.
+<br/>The application allows new lists to be created simply by typing the list name into the URL bar.
 
-## Technologies
-- Software language: JS, HTML, CSS
-- Frameworks: Node.js
-- NPM modules dependencies: express, mongoose, bodyParser
-- Database: MongoDB (NoSQL)
+### Key features
+- Create lists with just typing the name in the url bar
+- Data saved locally using MongoDB.
+- Can mark tasks as done and undo it.
 
-## Features
-- User can create lists of their own with just typing the name in the url bar
-- All the data of these lists are saved locally using MongoDB as a database, so refreshing the page won't erase changes.
+## Technologies used
+- js, html&css
+- nodejs
+- npm modules: express, mongoose, bodyParser
+- MongoDB
 
-## Screenshots
+
+## Media
 ![Today-list-image](./public/assets/Today-list-image.jpg)
 
 ![Work-list-image](./public/assets/Work-list-image.jpg)
 
-## Setup
-To run the todo-list website you need couple of softwares:
-- node.js
-- npm modules I included(easy to install)
-- MongoDB
-> All those tools you can install pretty easily with a quick search on youtube for a guide
 
-### How to start?
-1. First download all project files
-2. Open terminal in the project and install all the modules
+## Getting Started
 
-```bash
-npm i
-```
+To get a local copy up and running follow these simple steps.
 
-3. Run the project with node(or nodemon)
+### Prerequisites
 
-```bash
-node app.js
-```
+- Linux, MacOS or Windows
+- nodejs
+- npm
+- mongoDB
+
+### Installation
+
+---
+
+1. **Clone and enter the Todolist-app repository:**
+
+   ```bash
+   git clone https://github.com/oshriagronov/todolist-app && cd todolist
+   ```
+
+2. **Install npm modules:**
+
+   ```bash
+   sudo npm i
+   ```
+
+3. **Run the project with node:**  
+   ```bash
+    node app.js
+    ```
+
 4. Open the browser and enter in the url bar:
 ```
 localhost:3000/<name of the list>
