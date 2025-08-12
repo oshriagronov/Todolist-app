@@ -28,10 +28,8 @@ This project is a simple, minimalistic to-do list application that allows users 
 
 
 ## Media
-![Today-list-image](./public/assets/Today-list-image.jpg)
-
-![Work-list-image](./public/assets/Work-list-image.jpg)
-
+<img src="./public/assets/Today-list-image.jpg" alt="Today-list-image" width="200" height="200">
+<img src="./public/assets/Work-list-image.jpg" alt="Work-list-image" width="600" height="600">
 
 ## Getting Started
 
@@ -66,9 +64,9 @@ To get a local copy up and running follow these simple steps.
    ```
 
 4. Open the browser and enter in the url bar:
-```
-localhost:3000/<name of the list>
-```
+  ```
+  localhost:3000/<name of the list>
+  ```
 
 - With this structure you access you lists that already exist and if the list doesn't exist it will create one automatically.
 - If you don't enter a name it will use the default list called "Home"
